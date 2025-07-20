@@ -13,14 +13,18 @@
       background: #ffffff;
       color: #333;
     }
-    header {
+	header {
+		text-align: center;
+	}
+    .red {
       background-color: #d52b1e;
       color: white;
-      padding: 20px;
       text-align: center;
+	  padding:10px;
     }
-    header img {
+    header>img {
       max-height: 100px;
+	  margin:20px;
     }
     .main {
       padding: 40px 20px;
@@ -30,6 +34,11 @@
     h1, h2 {
       color: #d52b1e;
     }
+	.red>h1, .red>h2 {
+		color: white;
+		padding:0px;
+		margin:0px;
+	}
     .highlight {
       color: #0073cf;
       font-weight: bold;
@@ -44,42 +53,26 @@
       display: flex;
       justify-content: center;
       gap: 20px;
-      margin-top: 20px;
+      margin-top: 10px;
     }
     .flag {
-      width: 40px;
-      height: auto;
-    }
-    .lang-switch {
-      text-align: center;
-      margin: 10px;
-    }
-    .lang-switch button {
-      background: none;
-      border: 1px solid #d52b1e;
-      color: #d52b1e;
-      margin: 0 5px;
-      padding: 5px 10px;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-    .lang-switch button.active {
-      background-color: #d52b1e;
-      color: white;
-    }
-    .lang-content {
-      display: none;
-    }
-    .lang-content.active {
-      display: block;
+      width: auto;
+      height: 40px;
+	  border: solid white 3px;
     }
   </style>
 </head>
 <body>
   <header>
     <img src="sbs.jpg" alt="Logo Sociedad de Beneficencia Suiza">
-    <h1>Sociedad de Beneficencia Suiza</h1>
-    <p><span class="highlight">El Salvador</span> &mdash; <span class="highlight">Suiza</span></p>
+    <div class="red">
+		<h1>Sociedad de Beneficencia Suiza</h1>
+		<h2>El Salvador</h2>
+		<div class="flag-bar">
+		  <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Switzerland.svg" alt="Bandera de Suiza">
+		  <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/3/34/Flag_of_El_Salvador.svg" alt="Bandera de El Salvador">
+		</div>
+	</div>
   </header>
 
   <section class="main">
@@ -99,13 +92,8 @@
       </ul>
       <h2>Contacto</h2>
       <p>
-        Para más información, puedes visitar nuestra página de <a href="https://www.facebook.com/BeneficenciaSuiza" target="_blank">Facebook</a> o escribirnos por correo a <a href="mailto:contacto@sbssv.ch" target="_blank">contacto@sbssv.ch</a>.
+        Para más información, puedes visitar nuestra página de <a href="https://www.facebook.com/BeneficenciaSuiza" target="_blank">Facebook</a> o escribirnos por correo a <a href="mailto:contacto@sbssv.ch">contacto@sbssv.ch</a>.
       </p>
-    </div>
-
-    <div class="flag-bar">
-      <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Switzerland.svg" alt="Bandera de Suiza">
-      <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/3/34/Flag_of_El_Salvador.svg" alt="Bandera de El Salvador">
     </div>
   </section>
 
